@@ -4,7 +4,7 @@
     <string-array name="countryName">
         <item>Bangladesh</item>
         <item>India</item>
-        <item>Myanmar</item>
+        <item>Germany</item>
         <item>Pakistan</item>
         <item>Bhutan</item>
         <item>Nepal</item>
@@ -15,5 +15,7 @@
         <item>Australia</item>
         <item>Afghanistan</item>
         <item>Saudi Arabia</item>
+        <item>Iraq</item>
+
     </string-array>
 </resources>

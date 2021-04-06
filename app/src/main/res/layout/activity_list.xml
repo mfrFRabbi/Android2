@@ -5,13 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".ActivityList">
+    android:orientation="vertical"
+    tools:context=".ActivityList"
+    android:weightSum="10">
+    <SearchView
+        android:id="@+id/search_barId"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:queryHint="Search a country name"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_200"
+        />
 
     <ListView
+        android:layout_weight="9"
         android:id="@+id/listViewId"
         android:listSelector="#CDDC39"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:divider="@color/purple_200"
         android:dividerHeight="2dp">
     </ListView>
