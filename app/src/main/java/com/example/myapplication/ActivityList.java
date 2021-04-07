@@ -3,12 +3,16 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -39,14 +43,21 @@ private int[] img ={R.drawable.afg,R.drawable.australia,R.drawable.bhutan,
         list = new ArrayList<>();
 
 
-        for(int i = 0;i<countryName.length;i++){
-            list.add(new CountryInfo(countryName[i],img[i]));
+        for (int i = 0; i < countryName.length; i++) {
+            list.add(new CountryInfo(countryName[i], img[i]));
         }
 
-        adapter = new CustomAdapter(this,list);
+        adapter = new CustomAdapter(this, list);
 
         gridView.setAdapter(adapter);
 
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String v = adapter.getItem(position).toString();
+                Toast.makeText(getApplicationContext(),v,Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

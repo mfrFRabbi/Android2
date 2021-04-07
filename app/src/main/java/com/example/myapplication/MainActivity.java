@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-private Button button;
+private Button button,spinnerBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +34,17 @@ private Button button;
                startActivity(intent);
             }
         });
+
+        spinnerBtn = findViewById(R.id.spinnerBtnId);
+        spinnerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(getApplicationContext(),SpinnerActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }

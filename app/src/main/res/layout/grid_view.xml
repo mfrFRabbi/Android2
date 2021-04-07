@@ -12,7 +12,7 @@
         <ImageView
             android:id="@+id/imageViewId"
             android:layout_width="match_parent"
-            android:layout_height="194dp"
+            android:layout_height="88dp"
             android:scaleType="fitXY"
             android:src="@drawable/bd" />
 
@@ -23,7 +23,8 @@
             android:gravity="center_horizontal"
             android:text="@string/country_list"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
 
     </LinearLayout>
