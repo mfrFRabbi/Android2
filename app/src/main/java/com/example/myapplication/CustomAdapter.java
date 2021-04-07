@@ -9,30 +9,28 @@ import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CustomAdapter extends BaseAdapter {
+    Context context;
+    List<CountryInfo> list,list2;
+    private Filter obj;
 
-    private Context context;
-    private String[] countryNames,temCountry;
-    private int[] flag,temFlag;
-    private LayoutInflater inflater;
-    private Filter sc;
-
-    public CustomAdapter(Context context, String[] countryNames, int[] flag) {
+    public CustomAdapter(Context context, List<CountryInfo> list) {
         this.context = context;
-        this.countryNames = countryNames;
-        this.flag = flag;
-        temCountry = countryNames;
-        temFlag = flag;
+        this.list = list;
+        list2 = list;
     }
 
     @Override
     public int getCount() {
-        return countryNames.length;
+        return list.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return countryNames[position];
+        return list.get(position).getCountryNames();
     }
 
     @Override
@@ -40,61 +38,55 @@ public class CustomAdapter extends BaseAdapter {
         return position;
     }
 
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-        if (convertView == null) {
-            inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.list_view, parent, false);
+        if(convertView == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+            convertView = inflater.inflate(R.layout.grid_view,parent,false);
         }
+        ImageView imageView = convertView.findViewById(R.id.imageViewId);
+        TextView textView = convertView.findViewById(R.id.textViewId);
 
-            ImageView imageView = convertView.findViewById(R.id.imageViewId);
-            TextView textView = convertView.findViewById(R.id.countryTextId);
-            imageView.setImageResource(flag[position]);
-            textView.setText(countryNames[position]);
+        imageView.setImageResource(list.get(position).flag);
+        textView.setText(list.get(position).countryNames);
+
         return convertView;
     }
 
     public Filter getFilter(){
-        if(sc == null){
-            sc = new Search();
+        if(obj == null){
+            obj = new SearchFilter();
         }
-        return sc;
+        return obj;
     }
 
-    
-    private class Search extends Filter{
+    private class SearchFilter extends Filter{
 
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
             FilterResults results = new FilterResults();
-            
-            if(constraint!= null && constraint.length()>0) {
-                constraint = constraint.toString().toLowerCase();
-                String[] filter = new String[temCountry.length];
-                int[] filterFlag = new int[flag.length];
-                for (int i = 0; i < temCountry.length; i++) {
-                    if (temCountry[i].toLowerCase().contains(constraint)) {
-                        filter[i] = temCountry[i];
-                        filterFlag[i] = temFlag[i];
+            if(constraint.length() > 0 && constraint != null){
+                constraint.toString().toLowerCase();
+                List<CountryInfo> temList = new ArrayList<>();
+                for(int i = 0; i<list2.size();i++){
+                    if(list2.get(i).getCountryNames().toLowerCase().contains(constraint)){
+                        temList.add(new CountryInfo(list2.get(i).countryNames,list2.get(i).flag));
                     }
                 }
-                results.count =filter.length;
-                results.values = filter;
+                results.count = temList.size();
+                results.values = temList;
             }else {
-                results.count = temCountry.length;
-                results.values = temCountry;
+                results.count = list2.size();
+                results.values = list2;
             }
 
 
-            
             return results;
         }
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
-                countryNames = (String[]) results.values;
+                list = (List<CountryInfo>) results.values;
                 notifyDataSetChanged();
         }
     }
