@@ -1,9 +1,13 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -32,5 +36,34 @@ private Button button;
         });
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_layout,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.settingId) {
+            Toast.makeText(this,"Setting Menu",Toast.LENGTH_SHORT).show();
+         //   return true;
+        }
+
+        if(item.getItemId() == R.id.shareId) {
+            Toast.makeText(this,"Share Menu",Toast.LENGTH_SHORT).show();
+          //  return true;
+        }
+        if(item.getItemId() == R.id.feedbackId) {
+            Toast.makeText(this,"FeedBack Menu",Toast.LENGTH_SHORT).show();
+          //  return true;
+        }
+        if(item.getItemId() == R.id.aboutId) {
+            Toast.makeText(this,"About Menu",Toast.LENGTH_SHORT).show();
+          //  return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="country_list">Country List</string>
+    <string name="setting">Setting</string>
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="about">About</string>
     <string-array name="countryName">
         <item>Bangladesh</item>
         <item>India</item>
