@@ -9,11 +9,20 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 public class SpinnerActivity extends AppCompatActivity {
-private Spinner spinner;
-private Button printBtn;
-private TextView textView;
-private String[] countryNames;
+    private Spinner spinner;
+    private Button printBtn;
+    private TextView textView;
+    private String[] countryNames;
+    private int[] flag = {R.drawable.afg, R.drawable.australia, R.drawable.bhutan,
+            R.drawable.bd, R.drawable.china, R.drawable.germany,
+            R.drawable.india, R.drawable.iran, R.drawable.iraq,
+            R.drawable.japan, R.drawable.malaysia, R.drawable.nepal,
+            R.drawable.pak, R.drawable.saudiarabia};
+    SpinnerCustomAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +32,10 @@ private String[] countryNames;
         textView = findViewById(R.id.textId);
 
         countryNames = getResources().getStringArray(R.array.countryName);
-        ArrayAdapter<String> adapter;
-        adapter = new ArrayAdapter<>(this,R.layout.spinner_view,R.id.text_ViewId,countryNames);
+        Arrays.sort(countryNames);
+        Arrays.sort(flag);
+        adapter = new SpinnerCustomAdapter(this,countryNames,flag);
+
         spinner.setAdapter(adapter);
         printBtn.setOnClickListener(new View.OnClickListener() {
             @Override
