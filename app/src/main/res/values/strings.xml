@@ -8,6 +8,7 @@
     <string name="search">Search</string>
     <string name="spinner">Spinner</string>
     <string name="print">print</string>
+    <string name="progress">Progress</string>
     <string-array name="countryName">
         <item>Bangladesh</item>
         <item>India</item>

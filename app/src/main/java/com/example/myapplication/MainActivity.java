@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-private Button button,spinnerBtn;
+private Button button,spinnerBtn,progressBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +41,16 @@ private Button button,spinnerBtn;
             public void onClick(View v) {
                 Intent intent;
                 intent = new Intent(getApplicationContext(),SpinnerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        progressBtn = findViewById(R.id.progressBtnId);
+        progressBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(getApplicationContext(),ProgressActivity.class);
                 startActivity(intent);
             }
         });
