@@ -75,6 +75,13 @@ private Button button,spinnerBtn,progressBtn;
 
         if(item.getItemId() == R.id.shareId) {
             Toast.makeText(this,"Share Menu",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+            String sub = "This Subject";
+            String body = "This is Body field";
+            intent.putExtra(Intent.EXTRA_SUBJECT,sub);
+            intent.putExtra(Intent.EXTRA_TEXT,body);
+            startActivity(Intent.createChooser(intent,"Share With"));
           //  return true;
         }
         if(item.getItemId() == R.id.feedbackId) {
