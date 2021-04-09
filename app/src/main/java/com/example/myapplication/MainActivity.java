@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-private Button button,spinnerBtn,progressBtn;
+private Button button,spinnerBtn,progressBtn,autoBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +55,16 @@ private Button button,spinnerBtn,progressBtn;
             }
         });
 
+        autoBtn = findViewById(R.id.autoBtnId);
+        autoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(getApplicationContext(),AutoCompleteText.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }
@@ -86,6 +96,9 @@ private Button button,spinnerBtn,progressBtn;
         }
         if(item.getItemId() == R.id.feedbackId) {
             Toast.makeText(this,"FeedBack Menu",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getBaseContext(),FeedBackActivity.class);
+            startActivity(intent);
+
           //  return true;
         }
         if(item.getItemId() == R.id.aboutId) {
