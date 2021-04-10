@@ -5,7 +5,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ExpandableListView;
+import android.widget.SearchView;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -28,6 +32,7 @@ public class ExpandableListViewActivity extends AppCompatActivity {
         adapter = new ExpandableAdapter(this,headerList,childString);
         expandableListView.setAdapter(adapter);
 
+
     }
 
     private void prepareList(){
@@ -43,5 +48,26 @@ public class ExpandableListViewActivity extends AppCompatActivity {
             childString.put(headerList.get(i),child);
 
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.search_bar_layout, menu);
+        MenuItem menuItem = menu.findItem(R.id.searchId);
+        SearchView searchView = (SearchView) menuItem.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+        return super.onCreateOptionsMenu(menu);
     }
 }

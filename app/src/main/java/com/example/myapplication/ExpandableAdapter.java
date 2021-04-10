@@ -5,19 +5,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Filter;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class ExpandableAdapter extends BaseExpandableListAdapter {
     private Context context;
-    private List<String> headerList;
+    private List<String> headerList,copyHeaderList;
     private HashMap<String,List<String> > childString;
+    private Filter filterObj;
 
     public ExpandableAdapter(Context context, List<String> headerList, HashMap<String, List<String>> childString) {
         this.context = context;
         this.headerList = headerList;
+        copyHeaderList = headerList;
         this.childString = childString;
     }
 
@@ -83,5 +87,45 @@ public class ExpandableAdapter extends BaseExpandableListAdapter {
     @Override
     public boolean isChildSelectable(int groupPosition, int childPosition) {
         return true;
+    }
+
+    public Filter getFilter(){
+        if(filterObj == null){
+            filterObj = new SearchFilter();
+        }
+        return filterObj;
+    }
+
+    private class SearchFilter extends Filter{
+
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            FilterResults filterResults = new FilterResults();
+            if(constraint != null && constraint.length()>0){
+                constraint.toString().toLowerCase();
+                List<String> filterList = new ArrayList<>();
+                for(int i = 0; i<copyHeaderList.size();i++){
+                    if(copyHeaderList.get(i).toLowerCase().contains(constraint)){
+                        filterList.add(copyHeaderList.get(i));
+                    }
+                }
+
+                filterResults.count = filterList.size();
+                filterResults.values = filterList;
+
+            }else {
+                filterResults.count = copyHeaderList.size();
+                filterResults.values = copyHeaderList;
+            }
+
+
+            return filterResults;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+                headerList = (List<String>) results.values;
+                notifyDataSetChanged();
+        }
     }
 }
