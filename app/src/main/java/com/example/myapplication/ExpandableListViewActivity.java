@@ -18,13 +18,15 @@ public class ExpandableListViewActivity extends AppCompatActivity {
     private ExpandableListView expandableListView;
     private List<String> headerList;
     private HashMap<String,List<String> > childString;
-
+    private ExpandableAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expandable_list_view);
         expandableListView = findViewById(R.id.expandId);
         prepareList();
+        adapter = new ExpandableAdapter(this,headerList,childString);
+        expandableListView.setAdapter(adapter);
 
     }
 
