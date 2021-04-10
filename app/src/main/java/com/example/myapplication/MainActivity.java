@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-private Button button,spinnerBtn,progressBtn,autoBtn;
+private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +61,16 @@ private Button button,spinnerBtn,progressBtn,autoBtn;
             public void onClick(View v) {
                 Intent intent;
                 intent = new Intent(getApplicationContext(),AutoCompleteText.class);
+                startActivity(intent);
+            }
+        });
+
+        expandableBtn = findViewById(R.id.expandableListBtnId);
+        expandableBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(getApplicationContext(),ExpandableListViewActivity.class);
                 startActivity(intent);
             }
         });

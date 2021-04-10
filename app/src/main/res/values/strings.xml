@@ -24,6 +24,374 @@
         <item>Afghanistan</item>
         <item>Saudi Arabia</item>
         <item>Iraq</item>
-
     </string-array>
+    
+    <string-array name="computer_Abbreviation">
+        <item>AAC</item>
+        <item>ABR</item>
+        <item>ADSL</item>
+        <item>AGP</item>
+        <item>AI</item>
+        <item>AIM</item>
+        <item>ALGOL</item>
+        <item>ALU</item>
+        <item>AOL</item>
+        <item>AMD</item>
+        <item>API</item>
+        <item>APT</item>
+        <item>ARP</item>
+        <item>ARPANET</item>
+        <item>ARQ</item>
+        <item>AS</item>
+        <item>ASCII</item>
+        <item>ASP</item>
+        <item>ASPI</item>
+        <item>ATA</item>
+        <item>ATDT</item>
+        <item>AUI</item>
+        <item>AUTOEXEC</item>
+        <item>AVI</item>
+        <item>BASIC</item>
+        <item>BCC</item>
+        <item>BCD</item>
+        <item>BCR</item>
+        <item>BDSL</item>
+        <item>BEDO</item>
+        <item>BGP</item>
+        <item>BHTML</item>
+        <item>BIOS</item>
+        <item>BIPS</item>
+        <item>BIU</item>
+        <item>BMP</item>
+        <item>BRD</item>
+        <item>CC</item>
+        <item>CD</item>
+        <item>CD-R</item>
+        <item>CDROM</item>
+        <item>CDRW</item>
+        <item>CD-WO</item>
+        <item>CD-XA</item>
+        <item>CGI-BIN</item>
+        <item>CIS</item>
+        <item>CISC</item>
+        <item>CMD</item>
+        <item>CMYK</item>
+        <item>CNM</item>
+        <item>COAX</item>
+        <item>COBOL</item>
+        <item>COMPUTER</item>
+        <item>CPI</item>
+        <item>CPU</item>
+        <item>CROM</item>
+        <item>CRT</item>
+        <item>CSLIP</item>
+        <item>CSS</item>
+        <item>CTRL</item>
+        <item>CUI</item>
+        <item>DAC</item>
+        <item>DAT</item>
+        <item>dB</item>
+        <item>DBMS</item>
+        <item>DDL</item>
+        <item>DHTML</item>
+        <item>DML</item>
+        <item>DNS</item>
+        <item>DOC</item>
+        <item>Doc</item>
+        <item>DOS</item>
+        <item>DRAM</item>
+        <item>DVD</item>
+        <item>DVDR</item>
+        <item>DVDRW</item>
+        <item>DCE</item>
+        <item>DVI</item>
+        <item>DVR</item>
+        <item>E-Commerce</item>
+        <item>EDC</item>
+        <item>EDI</item>
+        <item>EDP</item>
+        <item>EEPROM</item>
+        <item>EFS</item>
+        <item>EIDE</item>
+        <item>E-Mail</item>
+        <item>EPROM</item>
+        <item>EROM</item>
+        <item>FDD</item>
+        <item>GB</item>
+        <item>GDI</item>
+        <item>GUI</item>
+        <item>HD</item>
+        <item>HTML</item>
+        <item>HTTP</item>
+        <item>I/O</item>
+        <item>IC</item>
+        <item>IMAP</item>
+        <item>INTEL</item>
+        <item>IOP</item>
+        <item>IP</item>
+        <item>ISDN</item>
+        <item>ISP</item>
+        <item>IVR</item>
+        <item>KB</item>
+        <item>Kbps</item>
+        <item>LAN</item>
+        <item>LED</item>
+        <item>LLL</item>
+        <item>LPT</item>
+        <item>MAC</item>
+        <item>MAN</item>
+        <item>MB</item>
+        <item>MBASIC</item>
+        <item>MBPS</item>
+        <item>Mbps</item>
+        <item>MICR</item>
+        <item>MMX</item>
+        <item>MODEM</item>
+        <item>MSCDEX</item>
+        <item>MS-DOS</item>
+        <item>NAT</item>
+        <item>NTP</item>
+        <item>OCR</item>
+        <item>OMR</item>
+        <item>OOP</item>
+        <item>OS</item>
+        <item>P2P</item>
+        <item>PAN</item>
+        <item>PC</item>
+        <item>PCB</item>
+        <item>PCI</item>
+        <item>PHP</item>
+        <item>PIXEL</item>
+        <item>PNG</item>
+        <item>PPP</item>
+        <item>PRN</item>
+        <item>PROM</item>
+        <item>RAM</item>
+        <item>RARP</item>
+        <item>RDBMS</item>
+        <item>RIP</item>
+        <item>RISC</item>
+        <item>ROM</item>
+        <item>SAM</item>
+        <item>SAN</item>
+        <item>SCSI</item>
+        <item>SDRAM</item>
+        <item>SFTP</item>
+        <item>SGML</item>
+        <item>SGRAM</item>
+        <item>SIP</item>
+        <item>SIU</item>
+        <item>SMTP</item>
+        <item>SNAP</item>
+        <item>SNMP</item>
+        <item>SRAM</item>
+        <item>SYSOP</item>
+        <item>TCP</item>
+        <item>UI</item>
+        <item>URL</item>
+        <item>USB</item>
+        <item>VCD</item>
+        <item>VDU</item>
+        <item>VIRUS</item>
+        <item>VRAM</item>
+        <item>VxD</item>
+        <item>WAN</item>
+        <item>WAP</item>
+        <item>WBMP</item>
+        <item>WIFI</item>
+        <item>WLAN</item>
+        <item>WML</item>
+        <item>WWW</item>
+        <item>XGA</item>
+        <item>XHTML</item>
+        <item>XMF</item>
+        <item>XML</item>
+        <item>XMS</item>
+        <item>FORTRAN</item>>
+    </string-array>
+
+    <string-array name="fullFormOfComputerAbbreviation">
+        <item>Advanced Audio Coding</item>
+        <item>Average Bit Rate</item>
+        <item>Asymmetric Digital Subscriber Line</item>
+        <item>Advanced Graphics Port</item>
+        <item>Artificial Intelligence</item>
+        <item>AOL Instant Messenger</item>
+        <item>Algorithmic Language</item>
+        <item>Arithmetic Logic Unit</item>
+        <item>America Online</item>
+        <item>Advanced Micro Devices</item>
+        <item>Application Program Interface</item>
+        <item>Automatically Programmed Tooling</item>
+        <item>Address Resolution Protocol</item>
+        <item>Advanced Research Projects Agency Network</item>
+        <item>Automatic Repeat Request</item>
+        <item>Autonomous System</item>
+        <item>American Standard Code for Information Interchange</item>
+        <item>Active Server Pages</item>
+        <item>Advanced SCSI Programming Interface</item>
+        <item>Advanced Technology Attachment</item>
+        <item>Attention Dial Tone</item>
+        <item>Attachment Unit Interface</item>
+        <item>Autoexec Automatic Execution file</item>
+        <item>Audio Video Interleave</item>
+        <item>Beginner’s All-purpose Symbolic Instruction Code</item>
+        <item>Blind Carbon Copy</item>
+        <item>Binary Coded Decimal</item>
+        <item>Bar Code Reader</item>
+        <item>Broadband DSL</item>
+        <item>Burst Extended Data Out (RAM)</item>
+        <item>Border Gateway Protocol</item>
+        <item>Broadcast Hyper Text Markup Language</item>
+        <item>Basic Input Output System</item>
+        <item>Billion Instruction Per Second</item>
+        <item>Bus Interface Unit</item>
+        <item>Bitmap</item>
+        <item>Blu-Ray Disc</item>
+        <item>Carbon Copy</item>
+        <item>Compact Disk</item>
+        <item>Compact Disk – Recordable</item>
+        <item>Compact Disk Read Only Memory</item>
+        <item>Compact Disk Rewritable</item>
+        <item>Compact Disk – Write Once</item>
+        <item>Compact Disk – Extended Architecture</item>
+        <item>Common Gateway Interface – Binary (programming for Web forms)</item>
+        <item>CompuServe Information Service</item>
+        <item>Complex Instructions Set Computers</item>
+        <item>Command</item>
+        <item>Cyan-Magenta-Yellow-Black (color model)</item>
+        <item>Circulatory Network Mode</item>
+        <item>Coaxial Cable (for Ethernet and similar networks)</item>
+        <item>Common Business Oriented Language</item>
+        <item>Commonly Operated Machine Particularly Used for Trade/Technology, Education, and Research.</item>
+        <item>Clock / Cycle Per Instruction</item>
+        <item>Central Processing Unit</item>
+        <item>Computerized Range of Motion</item>
+        <item>Cathode Ray Tube( standard type computer monitor display</item>
+        <item>Compressed Serial Line Interface Protocol (Internet)</item>
+        <item>Cascading Style Sheets</item>
+        <item>Control (computer keyboard key)</item>
+        <item>Character User Interface</item>
+        <item>Data Acquisition and Control</item>
+        <item>Digital Audio Tape</item>
+        <item>Decibel</item>
+        <item>Data Base Management System</item>
+        <item>Data Definition Language</item>
+        <item>Dynamics Hyper Text Markup Language</item>
+        <item>Data Manipulation Language</item>
+        <item>Domain Name System</item>
+        <item>Data Optimizing Computer</item>
+        <item>Document</item>
+        <item>Disk Operating System</item>
+        <item>Dynamic Random Access Memory</item>
+        <item>Digital Video/Versatile Disc</item>
+        <item>Digital Versatile Disk Recordable</item>
+        <item>Digital Versatile Disk Rewritable</item>
+        <item>Data Communications Equipment</item>
+        <item>Digital Visual Interface</item>
+        <item>Digital Video Recorder</item>
+        <item>Electronic Commerce</item>
+        <item>Electronic Digital Computer</item>
+        <item>Electronic Data Interchange</item>
+        <item>Electronic Data Processing</item>
+        <item>Electronically Erasable Programmable Read Only Memory</item>
+        <item>Encrypted File System</item>
+        <item>Enhanced Integrated Drive Electronics</item>
+        <item>Electronic Mail</item>
+        <item>Erasable Programmable Read Only Memory</item>
+        <item>Erasable Read Only Memory</item>
+        <item>Floppy Disk Drive</item>
+        <item>Giga Byte</item>
+        <item>Graphical Device Interface</item>
+        <item>Graphical User Interface</item>
+        <item>Hard Disk</item>
+        <item>Hyper Text Markup Language</item>
+        <item>Hyper Text Transfer Protocol</item>
+        <item>Input/Output (serial and parallel ports)</item>
+        <item>Integrated Circuit</item>
+        <item>Internet Message Access Protocol</item>
+        <item>Integrated Electronics</item>
+        <item>Input Output Processor</item>
+        <item>Internet Protocol</item>
+        <item>Integrated Services Digital Network</item>
+        <item>Internet Service Provider</item>
+        <item>Interactive Voice Response</item>
+        <item>KILOBYTE</item>
+        <item>Kilobits/Kilobytes Per Second</item>
+        <item>Local Area Network</item>
+        <item>Light Emitting Diode</item>
+        <item>Low Level Language</item>
+        <item>Line Printer</item>
+        <item>Media Access Control</item>
+        <item>Metropolitan Area Network</item>
+        <item>Motherboard/ Megabyte</item>
+        <item>Microsoft BASIC (Microsoft)</item>
+        <item>Megabytes Per Second</item>
+        <item>Megabits Per Second</item>
+        <item>Magnetic Ink Character Recognition</item>
+        <item>Multimedia Extensions</item>
+        <item>Modulator Demodulator</item>
+        <item>Microsoft Compact Disc Extension</item>
+        <item>Microsoft – Disk Operating System</item>
+        <item>Network Address Translation</item>
+        <item>Network Time Protocol</item>
+        <item>Optical Character Reader</item>
+        <item>Optical Mark Reader</item>
+        <item>Object Oriented Programming</item>
+        <item>Operating System</item>
+        <item>Point to Point Protocol</item>
+        <item>Personal Area Network</item>
+        <item>Personal Computer</item>
+        <item>Printer Circuit Board</item>
+        <item>Peripheral Component Interconnect</item>
+        <item>Hypertext Preprocessor</item>
+        <item>Picture Element</item>
+        <item>Portable Network Graphics</item>
+        <item>Point to Point Protocol</item>
+        <item>Printer</item>
+        <item>Programmable Read Only Memory</item>
+        <item>Random Access Memory</item>
+        <item>Reverse Address Resolution Protocol</item>
+        <item>Relational Data Base Management System</item>
+        <item>Routing Information Protocol</item>
+        <item>Reduced Instruction Set Computer</item>
+        <item>Read Only Memory</item>
+        <item>Software Asset Management</item>
+        <item>Storage Area Network</item>
+        <item>Small Computer System Interface</item>
+        <item>Synchronous Dynamic Random Access Memory</item>
+        <item>Secure File Transfer Protocol</item>
+        <item>Standard Generalized Markup Language</item>
+        <item>Synchronous Graphics RAM</item>
+        <item>Session Initiation Protocol</item>
+        <item>Serial Interface Unit</item>
+        <item>Simple Mail Transfer Protocol</item>
+        <item>Sub Network Access Protocol</item>
+        <item>Simple Network Management Protocol</item>
+        <item>Static Random Access Memory</item>
+        <item>System Operator</item>
+        <item>Transmission Control Protocol</item>
+        <item>User Interface</item>
+        <item>Uniform Resource Locator</item>
+        <item>Universal Serial Bus</item>
+        <item>Video Compact Disk</item>
+        <item>Visual Display Unit</item>
+        <item>Vital Information Resource Under Siege</item>
+        <item>Video Random Access Memory</item>
+        <item>Virtual Extended Driver</item>
+        <item>Wide Area Network</item>
+        <item>Wireless Application Protocol</item>
+        <item>Wireless Bitmap Image</item>
+        <item>Wireless fidelity</item>
+        <item>Wireless Local Area Network</item>
+        <item>Wireless Markup Language</item>
+        <item>World Wide Web</item>
+        <item>Extended Graphics Array</item>
+        <item>Extensible Hyper Text Markup Language</item>
+        <item>Extensible Music File</item>
+        <item>Extensible Markup Language</item>
+        <item>Extended Memory Specification</item>
+        <item>Formula Translation</item>
+    </string-array>
+    
 </resources>
