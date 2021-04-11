@@ -69,7 +69,7 @@ public class ExpandableListViewActivity extends AppCompatActivity {
     }
 
     private void prepareList(){
-        String[] headerStrings = getResources().getStringArray(R.array.computer_Abbreviation);
+     /*   String[] headerStrings = getResources().getStringArray(R.array.computer_Abbreviation);
         String[] childStrings = getResources().getStringArray(R.array.fullFormOfComputerAbbreviation);
         headerList = new ArrayList<>();
         childString = new HashMap<>();
@@ -79,8 +79,19 @@ public class ExpandableListViewActivity extends AppCompatActivity {
             List<String> child = new ArrayList<>();
             child.add(childStrings[i]);
             childString.put(headerList.get(i),child);
-
         }
+
+      */
+        headerList = new ArrayList<>();
+        childString = new HashMap<>();
+
+        headerList.add("1.Over View");
+        List<String> list = new ArrayList<>();
+        list.add("1.1 What is c language");
+        list.add("1.2 History of c language");
+        list.add("1.3 Features of  c language");
+        list.add("1.4 Advantages of c language");
+        childString.put(headerList.get(0),list);
     }
 
     @Override
