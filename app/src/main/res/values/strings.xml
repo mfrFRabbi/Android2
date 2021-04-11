@@ -25,7 +25,7 @@
         <item>Saudi Arabia</item>
         <item>Iraq</item>
     </string-array>
-    
+
     <string-array name="computer_Abbreviation">
         <item>AAC</item>
         <item>ABR</item>
@@ -393,5 +393,7 @@
         <item>Extended Memory Specification</item>
         <item>Formula Translation</item>
     </string-array>
-    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
