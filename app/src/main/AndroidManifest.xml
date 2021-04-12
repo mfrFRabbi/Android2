@@ -16,7 +16,10 @@
         <activity android:name=".FeedBackActivity" />
         <activity android:name=".ProgressActivity" />
         <activity android:name=".SpinnerActivity" />
-        <activity android:name=".ActivityList" />
+        <activity android:name=".ActivityList"
+            android:parentActivityName=".MainActivity"
+            >
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
