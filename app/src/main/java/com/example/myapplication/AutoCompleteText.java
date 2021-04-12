@@ -16,6 +16,10 @@ private AutoCompleteTextView autoCompleteText;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_complete_text);
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_launcher_background);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         autoCompleteText = findViewById(R.id.autoCompleteTextId);
         String[] countryNames = getResources().getStringArray(R.array.countryName);
 
