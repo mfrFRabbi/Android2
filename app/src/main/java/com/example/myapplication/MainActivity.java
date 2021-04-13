@@ -99,7 +99,9 @@ private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn,fragmentBtn,w
         textHtml.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent;
+                intent = new Intent(getApplicationContext(),HtmlContentInTextView.class);
+                startActivity(intent);
             }
         });
 

@@ -3,12 +3,12 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.webkit.WebView;
+import android.text.Html;
+import android.widget.TextView;
 
-public class HtmlWebView extends AppCompatActivity {
-    private WebView webView;
-
-  private   String myText = "<h1>This is heading 1 </h1>\n"+
+public class HtmlContentInTextView extends AppCompatActivity {
+private TextView textView;
+private String myText = "<h1>This is heading 1 </h1>\n"+
             "<h1>This is heading 1 </h1>\n"+
             "<h2>This is heading 2 </h2>\n"+
             "<h3>This is heading 3 </h3>\n"+
@@ -28,11 +28,10 @@ public class HtmlWebView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_html_web_viiew);
-        webView = findViewById(R.id.webViewId);
+        setContentView(R.layout.activity_html_content_in_text_view);
+        textView = findViewById(R.id.htmlTextId);
 
-        webView.loadDataWithBaseURL(null,myText,"text/html","utf-8",null);
-
+        textView.setText(Html.fromHtml(myText));
 
     }
 }
