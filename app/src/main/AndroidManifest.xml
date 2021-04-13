@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".FragmentDemo"
-            android:screenOrientation="landscape"></activity>
+        <activity android:name=".HtmlWebView"></activity>
+        <activity
+            android:name=".FragmentDemo"
+            android:screenOrientation="landscape" />
         <activity android:name=".ExpandableListViewActivity" />
         <activity android:name=".AutoCompleteText" />
         <activity android:name=".FeedBackActivity" />
         <activity android:name=".ProgressActivity" />
         <activity android:name=".SpinnerActivity" />
-        <activity android:name=".ActivityList"
-            android:parentActivityName=".MainActivity"
-            >
-        </activity>
+        <activity
+            android:name=".ActivityList"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

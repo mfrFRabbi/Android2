@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn,fragmentBtn;
+private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn,fragmentBtn,webBtn,textHtml;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +82,24 @@ private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn,fragmentBtn;
                 Intent intent;
                 intent = new Intent(getApplicationContext(),FragmentDemo.class);
                 startActivity(intent);
+            }
+        });
+
+       webBtn = findViewById(R.id.webBtnId);
+        webBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(getApplicationContext(),HtmlWebView.class);
+                startActivity(intent);
+            }
+        });
+
+        textHtml = findViewById(R.id.textHtmlBtnId);
+        textHtml.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
