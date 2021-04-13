@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn,fragmentBtn,webBtn,textHtml;
+private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn,fragmentBtn,webBtn,textHtml,scrollTab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,7 +104,15 @@ private Button button,spinnerBtn,progressBtn,autoBtn,expandableBtn,fragmentBtn,w
                 startActivity(intent);
             }
         });
-
+        scrollTab = findViewById(R.id.scrollTabBtnId);
+        scrollTab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(getApplicationContext(),ScrollTab.class);
+                startActivity(intent);
+            }
+        });
 
 
 
